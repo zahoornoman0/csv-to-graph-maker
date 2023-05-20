@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to bar Graph</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>CSV to Graph maker📊 &mdash; by <a href="https://www.linkedin.com/in/noman-zahoor-web-developer/">Noman Zahoor</a></h2>
+        <input type="file" id="file-input" accept=".csv" />
+        <div id="axis-selectors">
+          <label for="x-axis-select">X-Axis:</label>
+          <select id="x-axis-select"></select>
+          <label for="y-axis-select">Y-Axis:</label>
+          <select id="y-axis-select"></select>
+        </div>
+        <div id="chart-container">
+          <canvas id="chart"></canvas>
+        </div>
+      </div>
+</body>
+
+</html>
